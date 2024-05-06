@@ -65,13 +65,24 @@
   function mainMenu() {
     $('.st-nav').append('<span class="st-munu-toggle"><span></span></span>');
     $('.menu-item-has-children').append('<span class="st-munu-dropdown-toggle"></span>');
+
     $('.st-munu-toggle').on('click', function () {
-      $(this).toggleClass("st-toggle-active").siblings('.st-nav-list').slideToggle();;
+      $(this).toggleClass("st-toggle-active").siblings('.st-nav-list').slideToggle();
     });
+
     $('.st-munu-dropdown-toggle').on('click', function () {
       $(this).toggleClass('active').siblings('ul').slideToggle();
     });
+    $(document).on('click', function (event) {
+      var menuContainer = $('.st-nav');
+      if (!menuContainer.is(event.target) && menuContainer.has(event.target).length === 0) {
+        $('.st-munu-toggle').removeClass("st-toggle-active");
+        $('.st-nav-list').slideUp();
+        $('.st-munu-dropdown-toggle').removeClass('active').siblings('ul').slideUp();
+      }
+    });
   }
+  
 
   /*--------------------------------------------------------------
     4. Sticky Header
@@ -905,6 +916,7 @@ function changeLanguage(lang) {
   document.getElementById('emConstanteProgresso').innerText = translations[lang].emConstanteProgresso;
 
   document.getElementById('buttonSeeProjects').innerText = translations[lang].buttonSeeProjects;
+  document.getElementById('buttonSeeProjects1').innerText = translations[lang].buttonSeeProjects1;
   document.getElementById('buttonSeeProjects2').innerText = translations[lang].buttonSeeProjects2;
 
   document.getElementById('repository').innerText = translations[lang].repository;
