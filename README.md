@@ -19,4 +19,4 @@ Desenvolvedor apaixonado por criar soluções inovadoras e resolver desafios tec
 
 ## Contato
 - Email: pmaycon63@gmail.com
-- LinkedIn: [Meu LinkedIn](www.linkedin.com/in/maycon-pereira-8aa64019a)
+- LinkedIn: [Meu LinkedIn](https://www.linkedin.com/in/maycon-pereira-8aa64019a/)
