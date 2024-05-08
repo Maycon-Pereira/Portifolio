@@ -82,7 +82,7 @@
       }
     });
   }
-  
+
 
   /*--------------------------------------------------------------
     4. Sticky Header
@@ -504,6 +504,33 @@
 })(jQuery); // End of use strict
 
 
+function emailForm() {
+
+  nome = document.getElementById('name').value
+  email = document.getElementById('email').value
+  subject = document.getElementById('subject').value
+  msg = document.getElementById('msg').value
+
+ 
+
+  $.ajax({
+    method: 'POST',
+    url: 'https://formsubmit.co/ajax/pmaycon63@gmail.com',
+    dataType: 'json',
+    accepts: 'application/json',
+    data: {
+      name: nome,
+      email: email,
+      subject: subject,
+      message: msg
+    },
+    success: (data) => console.log(),
+    error: (err) => console.log(err)
+});
+
+
+}
+
 
 var openPopups = document.getElementsByClassName("openPopup");
 
@@ -594,11 +621,11 @@ const translations = {
     complement: 'Opportunities / Marketing',
     nameProject: 'BlueWorks - Employability',
     resumeProject1: 'It\'s a employability API and website project, which provides CRUD functionality for companies, users, and job openings. The website is designed for companies to create job openings, allowing users to apply for these openings.',
-    resumeProject2: 'Restful API of Voll.med application (without Front-End), containing functionalities for CRUD of doctors and patients, as well as scheduling and cancellation of appointments.',
-    
+    resumeProject2: 'We developed a REST API for Voll.med, in collaboration with Alura, using Spring Framework, Spring Security, and JPA for security and efficiency. It enables CRUD operations for doctors and patients, as well as scheduling/canceling appointments. It\'s a comprehensive solution for medical management, promoting a secure and integrated experience.',
+
     clinic: 'Clinic ',
     complementClinic: 'Specialty Clinic / Organization',
-    
+
     emConstanteProgresso: 'In constant evolution: This project is under development and is not yet finalized. We appreciate your patience and support as we work to make it even better.',
 
     buttonSeeProjects: 'See Project',
@@ -699,11 +726,11 @@ const translations = {
     complement: 'Oportunidades / Marketing',
     nameProject: 'BlueWorks - Empregabilidade',
     resumeProject1: 'É um projeto de API e Site de empregabilidade, onde disponibiliza a função CRUD de empresas, usuarios e vagas. Site especificado para a criação de empresas onde ela pode criar vagas de emprego, para que os usuarios se candidatatem as vagas.',
-    resumeProject2: 'API Rest da aplicação Voll.med (sem Front-End), contendo as funcionalidades de CRUD de médicos e de pacientes, além de agendamento e cancelamento de consultas.',
-    
+    resumeProject2: 'Desenvolvemos uma API REST para a Voll.med, junto com a Alura, usando Spring Framework, Spring Security e JPA para segurança e eficiência. Permite CRUD de médicos e pacientes, e agendamento/cancelamento de consultas. É uma solução completa para gestão médica, promovendo uma experiência segura e integrada.',
+
     clinic: 'Clínica',
     complementClinic: 'Especialidade / Organização',
-    
+
     emConstanteProgresso: 'Em constante evolução: Este projeto está em desenvolvimento e ainda não está finalizado. Agradecemos sua paciência e apoio enquanto trabalhamos para torná-lo ainda melhor.',
 
     buttonSeeProjects: 'Ver Projeto',
@@ -802,11 +829,11 @@ const translations = {
     complement: 'Oportunidades / Marketing',
     nameProject: 'BlueWorks - Empleabilidad',
     resumeProject1: 'Es un proyecto de API y sitio web de empleabilidad, que proporciona funcionalidad CRUD para empresas, usuarios y vacantes de empleo. El sitio web está diseñado para que las empresas creen vacantes de empleo, permitiendo que los usuarios se postulen para estas vacantes.',
-    resumeProject2: 'API Rest de la aplicación Voll.med (sin Front-End), que contiene las funcionalidades de CRUD de médicos y pacientes, además de programación y cancelación de citas.',
-    
+    resumeProject2: 'Desarrollamos una API REST para Voll.med, en colaboración con Alura, utilizando Spring Framework, Spring Security y JPA para seguridad y eficiencia. Permite operaciones CRUD para médicos y pacientes, así como la programación/cancelación de citas. Es una solución completa para gestión médica, promoviendo una experiencia segura e integrada.',
+
     clinic: 'Clínica',
     complementClinic: 'Especialidades / Organización',
-    
+
     emConstanteProgresso: 'En constante evolución: Este proyecto está en desarrollo y aún no está finalizado. Agradecemos su paciencia y apoyo mientras trabajamos para mejorarlo aún más.',
 
     buttonSeeProjects: 'Ver Proyecto',
@@ -1007,9 +1034,9 @@ document.getElementById('languageIcon').addEventListener('click', function (even
 
 
 
-const myObserver = new IntersectionObserver( (entries) => {
-  entries.forEach( (entry) => {
-    if(entry.isIntersecting){
+const myObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
       entry.target.classList.add('show')
     } else {
       entry.target.classList.remove('show')
@@ -1025,9 +1052,9 @@ elements.forEach((element) => myObserver.observe(element))
 
 
 
-const myObserverRight = new IntersectionObserver( (entries) => {
-  entries.forEach( (entry) => {
-    if(entry.isIntersecting){
+const myObserverRight = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
       entry.target.classList.add('show')
     } else {
       entry.target.classList.remove('show')
@@ -1043,9 +1070,9 @@ elementsRight.forEach((element) => myObserverRight.observe(element))
 
 
 
-const myObserverBottom = new IntersectionObserver( (entries) => {
-  entries.forEach( (entry) => {
-    if(entry.isIntersecting){
+const myObserverBottom = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
       entry.target.classList.add('show')
     } else {
       entry.target.classList.remove('show')
@@ -1056,4 +1083,3 @@ const myObserverBottom = new IntersectionObserver( (entries) => {
 const elementsBottom = document.querySelectorAll('.heading-anime')
 
 elementsBottom.forEach((element) => myObserverBottom.observe(element))
-

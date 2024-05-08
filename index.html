@@ -25,7 +25,6 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
 </head>
 
@@ -1051,7 +1050,8 @@
               <div class="aboutProject">
 
                 <div class="aboutText">
-                  <p id="resumeProject2">API Rest da aplicação Voll.med (sem Front-End), contendo as funcionalidades de CRUD de médicos e de pacientes, além de agendamento e cancelamento de consultas.</p>
+                  <p id="resumeProject2">
+                    Desenvolvemos uma API REST para a Voll.med, junto com a Alura, usando Spring Framework, Spring Security e JPA para segurança e eficiência. Permite CRUD de médicos e pacientes, e agendamento/cancelamento de consultas. É uma solução completa para gestão médica, promovendo uma experiência segura e integrada.</p>
                 </div>
 
 
@@ -1157,7 +1157,7 @@
         <div class="col-lg-6">
           <h3 class="st-contact-title heading-anime" id="hello">Prazer em vê-lo aqui!</h3>
           <div id="st-alert"></div>
-          <form action="#" method="POST" class="st-contact-form" id="contact-form">
+          <form class="st-contact-form" id="contact-form">
             <div class="st-form-field heading-anime">
               <input type="text" id="name" name="name" placeholder="Seu Nome" required>
             </div>
@@ -1170,7 +1170,8 @@
             <div class="st-form-field heading-anime">
               <textarea cols="30" rows="10" id="msg" name="msg" placeholder="Sua Mensagem" required></textarea>
             </div>
-            <button class="st-btn st-style1 st-color1 heading-anime" type="submit" id="submit" name="submit">Enviar mensagem</button>
+            <input type="hidden" name="_captcha" value="false">
+            <button class="st-btn st-style1 st-color1 heading-anime" onclick="emailForm()" type="submit" id="submit" name="submit">Enviar mensagem</button>
           </form>
         </div>
         <div class="st-height-b0 st-height-lg-b30"></div>
@@ -1193,7 +1194,7 @@
               <i class="fas fa-phone-alt heading-anime"></i>
               <div class="st-single-info-details  AnimatedLeft">
                 <h4 id="phone">Telefone</h4>
-                <span>+11 96447-6667</span>
+                <span>+55 11 96447-6667</span>
               </div>
             </div>
             <div class="st-single-contact-info">
