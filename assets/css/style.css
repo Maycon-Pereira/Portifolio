@@ -3726,3 +3726,7 @@ canvas {
 .containersk :nth-child(11) {
   transition-delay: 1300ms;
 }
+
+.flag:hover {
+  cursor: pointer;
+}

@@ -626,20 +626,29 @@ const translations = {
     clinic: 'Clinic ',
     complementClinic: 'Specialty Clinic / Organization',
 
+
+
+
+    complementCommerce: 'Sale / Purchase',
+    project3: 'E-Commerce API',
+    resumeProject3: 'REST API for an E-commerce Application Containing CRUD functionalities for users, including User, Seller, and Admin. A Seller can create products for sale, an Admin can create new categories, and a User can view and purchase these products.',
+
     emConstanteProgresso: 'In constant evolution: This project is under development and is not yet finalized. We appreciate your patience and support as we work to make it even better.',
 
     buttonSeeProjects: 'See Project',
     buttonSeeProjects1: 'See Project',
     buttonSeeProjects2: 'See Project',
+    buttonSeeProjects3: 'See Project',
 
     repository: '< Repository />',
     repository1: '< Repository />',
     repository2: '< Repository />',
+    repository3: '< Repository />',
 
     inConstruction: 'Under Construction',
     inConstruction1: 'Under Construction',
 
-    project_1: 'API Voll.Med',
+    project_1: 'Voll.Med API',
     inProgress1: 'In Progress',
 
     seeMore: 'See More...',
@@ -731,15 +740,22 @@ const translations = {
     clinic: 'Clínica',
     complementClinic: 'Especialidade / Organização',
 
+    complementCommerce: 'Venda / Compra',
+    project3: 'API E-Commerce',
+    resumeProject3: 'API Rest da aplicação de uma E-commerce, contendo as funcionalidades de CRUD de usuarios sendo Usuario, Vendedor e Admin, onde um Vendedor pode criar produtos para a venda, o Admin pode criar novas categorias, e o Usuario que pode ver esses produtos e compra-los.',
+
+
     emConstanteProgresso: 'Em constante evolução: Este projeto está em desenvolvimento e ainda não está finalizado. Agradecemos sua paciência e apoio enquanto trabalhamos para torná-lo ainda melhor.',
 
     buttonSeeProjects: 'Ver Projeto',
     buttonSeeProjects1: 'Ver Projeto',
     buttonSeeProjects2: 'Ver Projeto',
+    buttonSeeProjects3: 'Ver Projeto',
 
     repository: '< Repositório />',
     repository1: '< Repositório />',
     repository2: '< Repositório />',
+    repository3: '< Repositório />',
 
     inConstruction: 'Em Construção',
     inConstruction1: 'Em Construção',
@@ -834,15 +850,22 @@ const translations = {
     clinic: 'Clínica',
     complementClinic: 'Especialidades / Organización',
 
+    complementCommerce: 'Venta / Compra',
+    project3: 'API E-Commerce',
+    resumeProject3: 'API REST para una aplicación de comercio electrónico Contiene funcionalidades CRUD para usuarios, incluyendo Usuario, Vendedor y Admin. Un Vendedor puede crear productos para la venta, un Admin puede crear nuevas categorías, y un Usuario puede ver y comprar estos productos.',
+
+
     emConstanteProgresso: 'En constante evolución: Este proyecto está en desarrollo y aún no está finalizado. Agradecemos su paciencia y apoyo mientras trabajamos para mejorarlo aún más.',
 
     buttonSeeProjects: 'Ver Proyecto',
     buttonSeeProjects1: 'Ver Proyecto',
     buttonSeeProjects2: 'Ver Proyecto',
+    buttonSeeProjects3: 'Ver Proyecto',
 
     repository: '< Repositorio />',
     repository1: '< Repositorio />',
     repository2: '< Repositorio />',
+    repository3: '< Repositorio />',
 
     inConstruction: 'En Construcción',
     inConstruction1: 'En Construcción',
@@ -945,10 +968,12 @@ function changeLanguage(lang) {
   document.getElementById('buttonSeeProjects').innerText = translations[lang].buttonSeeProjects;
   document.getElementById('buttonSeeProjects1').innerText = translations[lang].buttonSeeProjects1;
   document.getElementById('buttonSeeProjects2').innerText = translations[lang].buttonSeeProjects2;
+  document.getElementById('buttonSeeProjects3').innerText = translations[lang].buttonSeeProjects3;
 
   document.getElementById('repository').innerText = translations[lang].repository;
   document.getElementById('repository1').innerText = translations[lang].repository1;
   document.getElementById('repository2').innerText = translations[lang].repository2;
+  document.getElementById('repository3').innerText = translations[lang].repository3;
 
   document.getElementById('inConstruction1').innerText = translations[lang].inConstruction1;
 
@@ -970,6 +995,24 @@ function changeLanguage(lang) {
   document.getElementById('address').innerText = translations[lang].address;
   document.getElementById('brazilAddress').innerText = translations[lang].brazilAddress;
   document.getElementById('visitPerfil').innerText = translations[lang].visitPerfil;
+
+  document.getElementById('complementCommerce').innerText = translations[lang].complementCommerce;
+  document.getElementById('project3').innerText = translations[lang].project3;
+  document.getElementById('resumeProject3').innerText = translations[lang].resumeProject3;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   var nameInput = document.getElementById('name');
   var emailInput = document.getElementById('email');
