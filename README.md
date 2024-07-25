@@ -6,6 +6,7 @@ Desenvolvedor apaixonado por criar soluções inovadoras e resolver desafios tec
 ## Projetos Destacados
 - **BlueWorks - Empregabilidade**: Desenvolvi uma API com Java e Spring Framework, em conjunto com uma aplicação web feita em HTML, CSS e Js.
 - **API Voll.Med**: Desenvolvi uma API com Java e Spring Framework em conjunto com Alura, com CRUD de medicos e pacientes, com agendamento e cancelamento de consultas.
+- **API E-Commerce**: A API Rest permite CRUD de Usuários, Vendedores e Admins, com Vendedores criando produtos, Admins gerenciando categorias e Usuários comprando produtos.
 
 ## Habilidades
 - **Desenvolvimento Backend**: Java com Spring Framework
