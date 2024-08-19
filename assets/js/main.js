@@ -636,9 +636,9 @@ const translations = {
     emConstanteProgresso: 'In constant evolution: This project is under development and is not yet finalized. We appreciate your patience and support as we work to make it even better.',
 
     buttonSeeProjects: 'See Project',
-    buttonSeeProjects1: 'See Project',
+/*     buttonSeeProjects1: 'See Project',
     buttonSeeProjects2: 'See Project',
-    buttonSeeProjects3: 'See Project',
+    buttonSeeProjects3: 'See Project', */
 
     repository: '< Repository />',
     repository1: '< Repository />',
@@ -748,9 +748,9 @@ const translations = {
     emConstanteProgresso: 'Em constante evolução: Este projeto está em desenvolvimento e ainda não está finalizado. Agradecemos sua paciência e apoio enquanto trabalhamos para torná-lo ainda melhor.',
 
     buttonSeeProjects: 'Ver Projeto',
-    buttonSeeProjects1: 'Ver Projeto',
+/*     buttonSeeProjects1: 'Ver Projeto',
     buttonSeeProjects2: 'Ver Projeto',
-    buttonSeeProjects3: 'Ver Projeto',
+    buttonSeeProjects3: 'Ver Projeto', */
 
     repository: '< Repositório />',
     repository1: '< Repositório />',
@@ -858,9 +858,9 @@ const translations = {
     emConstanteProgresso: 'En constante evolución: Este proyecto está en desarrollo y aún no está finalizado. Agradecemos su paciencia y apoyo mientras trabajamos para mejorarlo aún más.',
 
     buttonSeeProjects: 'Ver Proyecto',
-    buttonSeeProjects1: 'Ver Proyecto',
+/*     buttonSeeProjects1: 'Ver Proyecto',
     buttonSeeProjects2: 'Ver Proyecto',
-    buttonSeeProjects3: 'Ver Proyecto',
+    buttonSeeProjects3: 'Ver Proyecto', */
 
     repository: '< Repositorio />',
     repository1: '< Repositorio />',
@@ -966,9 +966,9 @@ function changeLanguage(lang) {
   document.getElementById('emConstanteProgresso').innerText = translations[lang].emConstanteProgresso;
 
   document.getElementById('buttonSeeProjects').innerText = translations[lang].buttonSeeProjects;
-  document.getElementById('buttonSeeProjects1').innerText = translations[lang].buttonSeeProjects1;
+/*   document.getElementById('buttonSeeProjects1').innerText = translations[lang].buttonSeeProjects1;
   document.getElementById('buttonSeeProjects2').innerText = translations[lang].buttonSeeProjects2;
-  document.getElementById('buttonSeeProjects3').innerText = translations[lang].buttonSeeProjects3;
+  document.getElementById('buttonSeeProjects3').innerText = translations[lang].buttonSeeProjects3; */
 
   document.getElementById('repository').innerText = translations[lang].repository;
   document.getElementById('repository1').innerText = translations[lang].repository1;
