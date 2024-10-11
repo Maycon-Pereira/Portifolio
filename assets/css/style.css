@@ -3730,3 +3730,22 @@ canvas {
 .flag:hover {
   cursor: pointer;
 }
+
+.projetosEscondido {
+  display: none;
+}
+
+.notification-bubble {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  margin-left: -15px;
+  font-weight: bold;
+  position: relative;
+  top: -5px;
+}

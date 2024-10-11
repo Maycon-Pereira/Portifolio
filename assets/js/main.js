@@ -630,8 +630,12 @@ const translations = {
 
 
     complementCommerce: 'Sale / Purchase',
+    complementsecurity: 'Security / Authentication',
+    complementhotel: 'Management / Reservation',
+    resumeProject5: 'The Reservation Management Microservice allows users to make, update and cancel hotel reservations. It offers functionalities to check room availability, register new reservations and manage customer information. The service ensures that all reservations are stored securely and allows access to real-time data on hotel occupancy.',
     project3: 'E-Commerce API',
     resumeProject3: 'REST API for an E-commerce Application Containing CRUD functionalities for users, including User, Seller, and Admin. A Seller can create products for sale, an Admin can create new categories, and a User can view and purchase these products.',
+    resumeProject4: 'The Security Microservice allows users to register and log in to the application securely. It uses JWT for authentication, generating tokens after login, which are used to access protected resources. The service differentiates between Regular Users and Administrators, with specific role-based permissions.',
 
     emConstanteProgresso: 'In constant evolution: This project is under development and is not yet finalized. We appreciate your patience and support as we work to make it even better.',
 
@@ -644,6 +648,8 @@ const translations = {
     repository1: '< Repository />',
     repository2: '< Repository />',
     repository3: '< Repository />',
+    repository4: '< Repository />',
+    repository5: '< Repository />',
 
     inConstruction: 'Under Construction',
     inConstruction1: 'Under Construction',
@@ -652,6 +658,7 @@ const translations = {
     inProgress1: 'In Progress',
 
     seeMore: 'See More...',
+    seeLess: 'see Less...',
 
     contact1: 'CONTACT-ME',
     contact2: 'CONTACT-ME',
@@ -741,9 +748,12 @@ const translations = {
     complementClinic: 'Especialidade / Organização',
 
     complementCommerce: 'Venda / Compra',
+    complementsecurity: 'Segurança / Autenticação',
+    complementhotel: 'Gerenciamento / Reserva',
+    resumeProject5: 'O Microserviço de Gerenciamento de Reservas permite que os usuários façam, atualizem e cancelem reservas em um hotel. Ele oferece funcionalidades para verificar a disponibilidade de quartos, registrar novas reservas e gerenciar informações de clientes. O serviço garante que todas as reservas sejam armazenadas de forma segura e permite o acesso a dados em tempo real sobre a ocupação do hotel.',
     project3: 'API E-Commerce',
     resumeProject3: 'API Rest da aplicação de uma E-commerce, contendo as funcionalidades de CRUD de usuarios sendo Usuario, Vendedor e Admin, onde um Vendedor pode criar produtos para a venda, o Admin pode criar novas categorias, e o Usuario que pode ver esses produtos e compra-los.',
-
+    resumeProject4: 'O Microserviço de Segurança permite que usuários se registrem e façam login na aplicação de forma segura. Ele utiliza JWT para autenticação, gerando tokens após o login, que são usados para acessar recursos protegidos. O serviço diferencia entre Usuários Comuns e Administradores, com permissões específicas baseadas em funções.',
 
     emConstanteProgresso: 'Em constante evolução: Este projeto está em desenvolvimento e ainda não está finalizado. Agradecemos sua paciência e apoio enquanto trabalhamos para torná-lo ainda melhor.',
 
@@ -756,6 +766,8 @@ const translations = {
     repository1: '< Repositório />',
     repository2: '< Repositório />',
     repository3: '< Repositório />',
+    repository4: '< Repositório />',
+    repository5: '< Repositório />',
 
     inConstruction: 'Em Construção',
     inConstruction1: 'Em Construção',
@@ -764,6 +776,7 @@ const translations = {
     inProgress1: 'Em Progresso',
 
     seeMore: 'Ver Mais...',
+    seeLess: 'Ver Menos...',
 
     contact1: 'CONTATE-ME',
     contact2: 'CONTATE-ME',
@@ -851,8 +864,12 @@ const translations = {
     complementClinic: 'Especialidades / Organización',
 
     complementCommerce: 'Venta / Compra',
+    complementsecurity: 'Seguridad/Autenticación',
+    complementhotel: 'Gestión / Reserva',
+    resumeProject5: 'El Microservicio de Gestión de Reservas permite a los usuarios realizar, actualizar y cancelar reservas de hotel. Ofrece funcionalidades para consultar la disponibilidad de habitaciones, registrar nuevas reservas y gestionar la información de los clientes. El servicio garantiza que todas las reservas se almacenen de forma segura y permite el acceso a datos en tiempo real sobre la ocupación hotelera.',
     project3: 'API E-Commerce',
     resumeProject3: 'API REST para una aplicación de comercio electrónico Contiene funcionalidades CRUD para usuarios, incluyendo Usuario, Vendedor y Admin. Un Vendedor puede crear productos para la venta, un Admin puede crear nuevas categorías, y un Usuario puede ver y comprar estos productos.',
+    resumeProject4: 'El microservicio de seguridad permite a los usuarios registrarse e iniciar sesión en la aplicación de forma segura. Utiliza JWT para la autenticación, generando tokens después de iniciar sesión, que se utilizan para acceder a recursos protegidos. El servicio diferencia entre usuarios habituales y administradores, con permisos específicos basados ​​en roles.',
 
 
     emConstanteProgresso: 'En constante evolución: Este proyecto está en desarrollo y aún no está finalizado. Agradecemos su paciencia y apoyo mientras trabajamos para mejorarlo aún más.',
@@ -866,6 +883,8 @@ const translations = {
     repository1: '< Repositorio />',
     repository2: '< Repositorio />',
     repository3: '< Repositorio />',
+    repository4: '< Repositorio />',
+    repository5: '< Repositorio />',
 
     inConstruction: 'En Construcción',
     inConstruction1: 'En Construcción',
@@ -874,6 +893,7 @@ const translations = {
     inProgress1: 'En Progreso',
 
     seeMore: 'Ver Más...',
+    seeLess: 'Ver Menos...',
 
     contact1: 'CONTÁCTAME',
     contact2: 'CONTÁCTAME',
@@ -974,6 +994,8 @@ function changeLanguage(lang) {
   document.getElementById('repository1').innerText = translations[lang].repository1;
   document.getElementById('repository2').innerText = translations[lang].repository2;
   document.getElementById('repository3').innerText = translations[lang].repository3;
+  document.getElementById('repository4').innerText = translations[lang].repository4;
+  document.getElementById('repository5').innerText = translations[lang].repository5;
 
   document.getElementById('inConstruction1').innerText = translations[lang].inConstruction1;
 
@@ -981,6 +1003,7 @@ function changeLanguage(lang) {
   document.getElementById('inProgress1').innerText = translations[lang].inProgress1;
 
   document.getElementById('seeMore').innerText = translations[lang].seeMore;
+  document.getElementById('seeLess').innerText = translations[lang].seeLess;
 
   document.getElementById('contact1').innerText = translations[lang].contact1;
   document.getElementById('contact2').innerText = translations[lang].contact2;
@@ -999,6 +1022,13 @@ function changeLanguage(lang) {
   document.getElementById('complementCommerce').innerText = translations[lang].complementCommerce;
   document.getElementById('project3').innerText = translations[lang].project3;
   document.getElementById('resumeProject3').innerText = translations[lang].resumeProject3;
+
+
+  document.getElementById('complementsecurity').innerText = translations[lang].complementsecurity;
+  document.getElementById('resumeProject4').innerText = translations[lang].resumeProject4;
+
+  document.getElementById('complementhotel').innerText = translations[lang].complementhotel;
+  document.getElementById('resumeProject5').innerText = translations[lang].resumeProject5;
 
 
 
@@ -1126,3 +1156,27 @@ const myObserverBottom = new IntersectionObserver((entries) => {
 const elementsBottom = document.querySelectorAll('.heading-anime')
 
 elementsBottom.forEach((element) => myObserverBottom.observe(element))
+
+
+function mostraProjetosEscondido(button) {
+  // Seleciona todos os elementos com a classe 'projetosEscondido'
+  const projetos = document.querySelectorAll('.projetosEscondido');
+
+  const bolha = document.getElementById("notificationBubble");
+  bolha.style.display = "none"; // Esconde a bolha
+
+  // Verifica se os projetos estão visíveis ou não
+  if (projetos[0].style.display === "block") {
+      // Se estiver visível, oculta os projetos e muda o texto do botão
+      projetos.forEach(projeto => {
+          projeto.style.display = "none"; // Muda para "none" para ocultar
+      });
+      button.innerHTML = 'Ver Mais...'; // Muda o texto para "Ver Mais..."
+  } else {
+      // Se não estiver visível, exibe os projetos e muda o texto do botão
+      projetos.forEach(projeto => {
+          projeto.style.display = "block"; // Muda para "block" para exibir
+      });
+      button.innerHTML = 'Ver Menos...'; // Muda o texto para "Ver Menos..."
+  }
+}
