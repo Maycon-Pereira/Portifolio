@@ -1003,7 +1003,7 @@ function changeLanguage(lang) {
   document.getElementById('inProgress1').innerText = translations[lang].inProgress1;
 
   document.getElementById('seeMore').innerText = translations[lang].seeMore;
-  document.getElementById('seeLess').innerText = translations[lang].seeLess;
+  document.getElementById('seeMore').innerText = translations[lang].seeLess;
 
   document.getElementById('contact1').innerText = translations[lang].contact1;
   document.getElementById('contact2').innerText = translations[lang].contact2;
