@@ -608,6 +608,13 @@ const translations = {
     technician: 'Computer Technician',
     resumeEducation: 'While studying at (Fieb), I acquired solid skills in computer science, including programming. This education prepared me to tackle software development challenges with efficiency and quality.',
 
+
+    graduacao: 'Graduation',
+    graduation: 'Information Systems Development',
+    resumeGraduacao: 'I am studying at São Judas to graduate and establish myself in the market with solid knowledge and great opportunities in the field.',
+    university:"São Judas Tadeu University",
+
+    
     skills1: 'MY SKILLS',
     skills2: 'MY SKILLS',
 
@@ -728,6 +735,12 @@ const translations = {
     educacao: 'Educação',
     technician: 'Técnico em Informática',
     resumeEducation: 'Enquanto estudei na (Fieb), obtive habilidades sólidas em informática, incluindo programação. Essa formação me preparou para enfrentar desafios no desenvolvimento de software com eficiência e qualidade.',
+    university:"Universidade São Judas Tadeu",
+
+    graduacao: 'Graduação',
+    graduation: 'Análise e Desenvolvimento de Sistemas (ADS)',
+    resumeGraduacao: 'Estou estudando na São Judas, para me formar e me estabelecer no mercado com conhecimentos solídos e com grandes oportunidade na área.',
+
 
     skills1: 'HABILIDADES',
     skills2: 'HABILIDADES',
@@ -844,6 +857,12 @@ const translations = {
     educacao: 'Educación',
     technician: 'Técnico en Informática',
     resumeEducation: 'Mientras estudiaba en (Fieb), adquirí sólidas habilidades en informática, incluyendo programación. Esta educación me preparó para enfrentar desafíos en el desarrollo de software con eficiencia y calidad.',
+    
+
+    graduacao: 'Grado',
+    graduation: 'Análisis y Desarrollo de Sistemas (ADS)',
+    resumeGraduacao: 'Estoy estudiando en São Judas para graduarme y establecerme en el mercado con conocimientos sólidos y grandes oportunidades en el área.',
+    university:"Universidad São Judas Tadeu",
 
     skills1: 'MIS HABILIDADES',
     skills2: 'MIS HABILIDADES',
@@ -963,6 +982,11 @@ function changeLanguage(lang) {
   document.getElementById('technician').innerText = translations[lang].technician;
   document.getElementById('resumeEducation').innerText = translations[lang].resumeEducation;
 
+  document.getElementById('graduacao').innerText = translations[lang].graduacao;
+  document.getElementById('graduation').innerText = translations[lang].graduation;
+  document.getElementById('resumeGraduacao').innerText = translations[lang].resumeGraduacao;
+  document.getElementById('university').innerText = translations[lang].university;
+  
   document.getElementById('skills1').innerText = translations[lang].skills1;
   document.getElementById('skills2').innerText = translations[lang].skills2;
 

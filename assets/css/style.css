@@ -139,7 +139,6 @@ a:hover {
   html {
     font-size: 14px;
   }
-
 }
 
 /*--------------------------------------------------------------
@@ -1503,7 +1502,6 @@ canvas {
   .st-hero-wrap .st-hero-img {
     display: none;
   }
-
 }
 
 @media screen and (max-width: 767px) {
