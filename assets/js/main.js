@@ -511,7 +511,7 @@ function emailForm() {
   subject = document.getElementById('subject').value
   msg = document.getElementById('msg').value
 
- 
+
 
   $.ajax({
     method: 'POST',
@@ -526,12 +526,12 @@ function emailForm() {
     },
     success: (data) => console.log(),
     error: (err) => console.log(err)
-});
+  });
 
 
 }
 
-
+/* 
 var openPopups = document.getElementsByClassName("openPopup");
 
 // Itera sobre cada elemento e adiciona um evento de clique
@@ -550,138 +550,10 @@ window.addEventListener("click", function (event) {
   if (event.target == popup) {
     popup.style.display = "none";
   }
-});
+}); */
 
 
 const translations = {
-  en: {
-    homeNav: 'Home',
-    aboutNav: 'About',
-    servicesNav: 'Services',
-    resumeNav: 'Resume',
-    skillsNav: 'Skills',
-    projectsNav: 'Projects',
-    contactNav: 'Contact-me',
-
-    ola1: 'Hello, I’m',
-    contrat: 'Hire me',
-
-    aboutMe: 'ABOUT ME',
-    aboutMe2: 'ABOUT ME',
-
-    aboutTitle: 'Hi There! I\'m Maycon Pereira',
-    aboutResume: 'I\'m all about continuous learning, constantly on the lookout for ways to channel my tech passion into creative and challenging projects. What started as a mere fascination has evolved into an ongoing drive to explore new concepts and hone my skills in the development realm.',
-
-    birthday: 'Birthday',
-    birthdayDate: 'August 25, 2005',
-    souDe: 'From',
-    souDeBrazil: 'Barueri, SP, Brazil',
-    language: 'Language',
-    languageTraslate: 'Portuguese, English',
-    free: 'Available',
-    downloadCV: 'Download CV',
-
-    service: 'SERVICES',
-    service2: 'SERVICES',
-
-
-    box1: 'APIs RESTful',
-    box2: 'Developing robust and scalable APIs using Spring Boot.',
-    box3: 'Database',
-    box4: 'Experience in integrating Java applications with different databases.',
-    box5: 'Git and GitHub',
-    box6: 'Advanced use of Git for version control and team collaboration.',
-    box7: 'Application Management',
-    box8: 'Experience in deployment and management of Spring Boot applications.',
-    box9: 'Security and Authentication',
-    box10: 'Implementation of security in RESTful APIs using Spring Security.',
-    box11: 'Automated Testing',
-    box12: 'Implementation of unit and integration tests in Spring Boot projects.',
-
-    exp: 'RESUME',
-    exp1: 'RESUME',
-
-    exp2: 'Experience',
-    resumeExperience: 'BlueWorks - Employability, led the independent development of a complete web application for my graduation project, covering front-end, back-end, and database. This experience enhanced my skills in development and project management.',
-
-    educacao: 'Education',
-    technician: 'Computer Technician',
-    resumeEducation: 'While studying at (Fieb), I acquired solid skills in computer science, including programming. This education prepared me to tackle software development challenges with efficiency and quality.',
-
-
-    graduacao: 'Graduation',
-    graduation: 'Information Systems Development',
-    resumeGraduacao: 'I am studying at São Judas to graduate and establish myself in the market with solid knowledge and great opportunities in the field.',
-    university:"São Judas Tadeu University",
-
-    
-    skills1: 'MY SKILLS',
-    skills2: 'MY SKILLS',
-
-    projec: 'PROJECTS',
-    projec1: 'PROJECTS',
-
-    attention: 'attention',
-    attentionWord: 'AREA UNDER\n CONSTRUCTION.\n SORRY FOR THE\n INCONVENIENCE',
-
-    vagas: 'Jobs',
-    complement: 'Opportunities / Marketing',
-    nameProject: 'BlueWorks - Employability',
-    resumeProject1: 'It\'s a employability API and website project, which provides CRUD functionality for companies, users, and job openings. The website is designed for companies to create job openings, allowing users to apply for these openings.',
-    resumeProject2: 'We developed a REST API for Voll.med, in collaboration with Alura, using Spring Framework, Spring Security, and JPA for security and efficiency. It enables CRUD operations for doctors and patients, as well as scheduling/canceling appointments. It\'s a comprehensive solution for medical management, promoting a secure and integrated experience.',
-
-    clinic: 'Clinic ',
-    complementClinic: 'Specialty Clinic / Organization',
-
-
-
-
-    complementCommerce: 'Sale / Purchase',
-    complementsecurity: 'Security / Authentication',
-    complementhotel: 'Management / Reservation',
-    resumeProject5: 'The Reservation Management Microservice allows users to make, update and cancel hotel reservations. It offers functionalities to check room availability, register new reservations and manage customer information. The service ensures that all reservations are stored securely and allows access to real-time data on hotel occupancy.',
-    project3: 'E-Commerce API',
-    resumeProject3: 'REST API for an E-commerce Application Containing CRUD functionalities for users, including User, Seller, and Admin. A Seller can create products for sale, an Admin can create new categories, and a User can view and purchase these products.',
-    resumeProject4: 'The Security Microservice allows users to register and log in to the application securely. It uses JWT for authentication, generating tokens after login, which are used to access protected resources. The service differentiates between Regular Users and Administrators, with specific role-based permissions.',
-
-    emConstanteProgresso: 'In constant evolution: This project is under development and is not yet finalized. We appreciate your patience and support as we work to make it even better.',
-
-    buttonSeeProjects: 'See Project',
-/*     buttonSeeProjects1: 'See Project',
-    buttonSeeProjects2: 'See Project',
-    buttonSeeProjects3: 'See Project', */
-
-    repository: '< Repository />',
-    repository1: '< Repository />',
-    repository2: '< Repository />',
-    repository3: '< Repository />',
-    repository4: '< Repository />',
-    repository5: '< Repository />',
-
-    inConstruction: 'Under Construction',
-    inConstruction1: 'Under Construction',
-
-    project_1: 'Voll.Med API',
-    inProgress1: 'In Progress',
-
-    seeMore: 'See More...',
-    seeLess: 'see Less...',
-
-    contact1: 'CONTACT-ME',
-    contact2: 'CONTACT-ME',
-
-    hello: 'Just say Hello',
-    contactInf: 'Contact Info',
-    contactInformation: 'Thank you for visiting my portfolio! If you would like to get in touch with me for collaboration opportunities, freelance projects, or just to say hello, feel free to send me an email.',
-    submit: 'Send message',
-
-    phone: 'Phone',
-    address: 'Address',
-    brazilAddress: 'Barueri, Brazil',
-    visitPerfil: 'Visite my social profile and get connected',
-
-
-  },
   pt: {
     homeNav: 'Início',
     aboutNav: 'Sobre',
@@ -692,16 +564,16 @@ const translations = {
     contactNav: 'Contate-me',
 
     ola1: 'Olá, Eu sou',
+    profss: 'Engenheiro de Software',
     contrat: 'Contrate-me',
 
     aboutMe: 'SOBRE MIM',
-    aboutMe2: 'SOBRE MIM',
 
     aboutTitle: 'Olá, sou o Maycon Pereira',
-    aboutResume: 'Sou totalmente focado em aprendizado contínuo, sempre em busca de maneiras de canalizar minha paixão pela tecnologia em projetos criativos e desafiadores. O que começou como uma mera fascinação evoluiu para uma motivação constante de explorar novos conceitos e aprimorar minhas habilidades no campo do desenvolvimento.',
+    aboutResume: 'Ingeniero de Software con más de 3 años de experiencia en back-end con Java y Spring Boot. Enfoque en APIs RESTful seguras, pruebas automatizadas (JUnit, Mockito, Postman), control de versiones con Git e integración continua (Jenkins, GitHub Actions). Experiencia en equipos ágiles con liderazgo técnico de squads, utilizando bases de datos relacionales y arquitectura orientada a servicios. Comprometido con código limpio, calidad y entregas consistentes.',
 
     birthday: 'Aniversário',
-    birthdayDate: '25, Agosto 2005',
+    birthdayDate: '25 de Agosto 2005',
     souDe: 'Sou De',
     souDeBrazil: 'Barueri, SP, Brasil',
     language: 'Idiomas',
@@ -710,43 +582,53 @@ const translations = {
     downloadCV: 'Baixar CV',
 
     service: 'SERVIÇOS',
-    service2: 'SERVIÇOS',
 
-
-    box1: 'APIs RESTful',
-    box2: 'Desenvolvimento de APIs robustas e escaláveis usando Spring Boot.',
+    box1: 'Java & Back-End',
+    box2: `Desenvolvimento de APIs RESTful com Spring Boot.
+Foco em arquitetura escalável e robusta.
+Integração entre sistemas e serviços.`,
     box3: 'Banco de Dados',
-    box4: 'Experiência em integração de aplicações Java com diferentes bancos de dados.',
-    box5: 'Git e GitHub',
-    box6: 'Uso avançado do Git para controle de versão e colaboração em equipe.',
-    box7: 'Gerenciamento de Aplicações',
-    box8: 'Experiência em implantação e gerenciamento de aplicações Spring Boot.',
-    box9: 'Segurança e Autenticação',
-    box10: 'Implementação de segurança em APIs RESTful usando Spring Security.',
-    box11: 'Testes Automatizados',
-    box12: 'Implementação de testes unitários e de integração em projetos Spring Boot.',
+    box4: `Experiência com MySQL e PostgreSQL.
+Modelagem e manutenção de dados.
+Otimização de consultas SQL.`,
+    box5: 'Controle de Versão',
+    box6: `Uso avançado de Git e GitHub.
+Criação e gerenciamento de branches.
+Colaboração em equipes de desenvolvimento.`,
+    box7: 'Aplicações',
+    box8: `Implantação de aplicações Spring Boot.
+Configuração de ambientes produtivos.
+Monitoramento e manutenção contínua.`,
+    box9: 'Segurança',
+    box10: `Implementação de autenticação e autorização.
+Configuração de Spring Security.
+Boas práticas contra vulnerabilidades.`,
+    box11: 'Testes & QA',
+    box12: `Testes unitários e de integração com JUnit.
+Validação de APIs com Postman.
+Garantia de qualidade no ciclo de desenvolvimento.`,
 
     exp: 'EXPERIÊNCIA',
-    exp1: 'EXPERIÊNCIA',
+    exp1: 'Experiência',
 
-    exp2: 'Experiência',
-    resumeExperience: 'BlueWorks - Empregabilidade, conduzi o desenvolvimento independente de uma aplicação web completa para meu projeto de conclusão de curso, abrangendo front-end, back-end e banco de dados. Essa experiência aprimorou minhas habilidades em desenvolvimento e gestão de projetos.',
+    qaEng: 'Engenheiro QA',
+    atual: 'Até o momento',
 
-    educacao: 'Educação',
-    technician: 'Técnico em Informática',
-    resumeEducation: 'Enquanto estudei na (Fieb), obtive habilidades sólidas em informática, incluindo programação. Essa formação me preparou para enfrentar desafios no desenvolvimento de software com eficiência e qualidade.',
-    university:"Universidade São Judas Tadeu",
+    resumeExperienceQA: 'Atuando como QA Engineer, contribuindo para garantir a qualidade das entregas por meio de testes automatizados, documentação de cenários, acompanhamento dos ciclos de desenvolvimento e apoio na identificação de melhorias nos processos e sistemas. Sempre aprendendo e evoluindo com o time!',
+    resumeExperienceFre: 'Conduzi o desenvolvimento completo de um e-commerce com WordPress e Elementor, integrando WooCommerce e aplicando melhorias de UX e SEO que aumentaram as vendas em 700%.',
+    resumeExperienceFull: 'Conduzi de forma independente o desenvolvimento de uma aplicação web completa, abrangendo front-end, back-end e banco de dados para a Fieb. Essa experiência fortaleceu minhas habilidades em desenvolvimento, integração de sistemas e gestão de projetos.',
 
     graduacao: 'Graduação',
     graduation: 'Análise e Desenvolvimento de Sistemas (ADS)',
-    resumeGraduacao: 'Estou estudando na São Judas, para me formar e me estabelecer no mercado com conhecimentos solídos e com grandes oportunidade na área.',
+    resumeGraduacao: 'Estou estudando na São Judas para me formar e me estabelecer no mercado, adquirindo conhecimentos sólidos e aproveitando grandes oportunidades na área de tecnologia, com foco em desenvolvimento de software, segurança e qualidade de sistemas.',
+    university: "Universidade São Judas Tadeu",
 
+    technician: 'Técnico em Informática',
+    resumeEducation: 'Enquanto estudei na (Fieb), obtive habilidades sólidas em informática, incluindo programação. Essa formação me preparou para enfrentar desafios no desenvolvimento de software com eficiência e qualidade.',
 
     skills1: 'HABILIDADES',
-    skills2: 'HABILIDADES',
 
     projec: 'PROJETOS',
-    projec1: 'PROJETOS',
 
     attention: 'ATENÇÃO',
     attentionWord: 'ESTAMOS EM\n OBRAS.\n DESCULPE O\n TRANSTORNO',
@@ -771,19 +653,9 @@ const translations = {
     emConstanteProgresso: 'Em constante evolução: Este projeto está em desenvolvimento e ainda não está finalizado. Agradecemos sua paciência e apoio enquanto trabalhamos para torná-lo ainda melhor.',
 
     buttonSeeProjects: 'Ver Projeto',
-/*     buttonSeeProjects1: 'Ver Projeto',
-    buttonSeeProjects2: 'Ver Projeto',
-    buttonSeeProjects3: 'Ver Projeto', */
-
     repository: '< Repositório />',
-    repository1: '< Repositório />',
-    repository2: '< Repositório />',
-    repository3: '< Repositório />',
-    repository4: '< Repositório />',
-    repository5: '< Repositório />',
 
     inConstruction: 'Em Construção',
-    inConstruction1: 'Em Construção',
 
     project_1: 'API Voll.Med',
     inProgress1: 'Em Progresso',
@@ -792,7 +664,6 @@ const translations = {
     seeLess: 'Ver Menos...',
 
     contact1: 'CONTATE-ME',
-    contact2: 'CONTATE-ME',
 
     hello: 'Prazer em vê-lo aqui!',
     contactInf: 'Informação de Contato',
@@ -804,6 +675,129 @@ const translations = {
     brazilAddress: 'Barueri, Brasil',
     visitPerfil: 'Visite meu perfil e conecte-se comigo',
   },
+  en: {
+    homeNav: 'Home',
+    aboutNav: 'About',
+    servicesNav: 'Services',
+    resumeNav: 'Resume',
+    skillsNav: 'Skills',
+    projectsNav: 'Projects',
+    contactNav: 'Contact-me',
+
+    ola1: 'Hello, I’m',
+    profss: 'Software Engineer',
+    contrat: 'Hire me',
+
+    aboutMe: 'ABOUT ME',
+
+    aboutTitle: 'Hi There! I\'m Maycon Pereira',
+    aboutResume: 'Software Engineer with over 3 years of experience in back-end development using Java and Spring Boot. Focused on secure RESTful APIs, automated testing (JUnit, Mockito, Postman), version control with Git, and continuous integration (Jenkins, GitHub Actions). Experienced in agile teams with technical leadership of squads, working with relational databases and service-oriented architecture. Committed to clean code, quality, and consistent delivery.',
+
+    birthday: 'Birthday',
+    birthdayDate: 'August 25, 2005',
+    souDe: 'From',
+    souDeBrazil: 'Barueri, SP, Brazil',
+    language: 'Language',
+    languageTraslate: 'Portuguese, English',
+    free: 'Available',
+    downloadCV: 'Download CV',
+
+    service: 'SERVICES',
+
+    box1: 'Java & Back-End',
+    box2: `Development of RESTful APIs with Spring Boot.
+Focus on scalable and robust architecture.
+Integration between systems and services.`,
+    box3: 'Databases',
+    box4: `Experience with MySQL and PostgreSQL.
+Data modeling and maintenance.
+SQL query optimization.`,
+    box5: 'Version Control',
+    box6: `Advanced use of Git and GitHub.
+Branch creation and management.
+Collaboration in development teams.`,
+    box7: 'Applications',
+    box8: `Deployment of Spring Boot applications.
+Configuration of production environments.
+Continuous monitoring and maintenance.`,
+    box9: 'Security',
+    box10: `Implementation of authentication and authorization.
+Configuration of Spring Security.
+Best practices against vulnerabilities.`,
+    box11: 'Testing & QA',
+    box12: `Unit and integration testing with JUnit.
+API validation with Postman.
+Quality assurance throughout the development lifecycle.`,
+
+    exp: 'RESUME',
+    exp1: 'Experience',
+
+    qaEng: 'QA Engineer',
+    atual: 'Present',
+
+    resumeExperienceQA: 'Working as a QA Engineer, contributing to ensure delivery quality through automated testing, test scenario documentation, monitoring development cycles, and supporting process and system improvements. Always learning and growing with the team!',
+    resumeExperienceFre: 'Led the full development of an e-commerce platform using WordPress and Elementor, integrating WooCommerce and applying UX and SEO improvements that increased sales by 700%.',
+    resumeExperienceFull: 'Independently developed a complete web application covering front-end, back-end, and database for Fieb. This experience strengthened my skills in development, systems integration, and project management.',
+
+
+    graduacao: 'Graduation',
+    graduation: 'Information Systems Development',
+    resumeGraduacao: 'I am studying at São Judas University to graduate and establish myself in the job market, acquiring solid knowledge and seizing great opportunities in the technology field, with a focus on software development, security, and systems quality.',
+    university: "São Judas Tadeu University",
+
+    technician: 'Computer Technician',
+    resumeEducation: 'While studying at (Fieb), I acquired solid skills in computer science, including programming. This education prepared me to tackle software development challenges with efficiency and quality.',
+
+    skills1: 'MY SKILLS',
+
+    projec: 'PROJECTS',
+
+    attention: 'ATTENTION',
+    attentionWord: 'AREA UNDER\n CONSTRUCTION.\n SORRY FOR THE\n INCONVENIENCE',
+
+    vagas: 'Jobs',
+    complement: 'Opportunities / Marketing',
+    nameProject: 'BlueWorks - Employability',
+    resumeProject1: 'It\'s a employability API and website project, which provides CRUD functionality for companies, users, and job openings. The website is designed for companies to create job openings, allowing users to apply for these openings.',
+    resumeProject2: 'We developed a REST API for Voll.med, in collaboration with Alura, using Spring Framework, Spring Security, and JPA for security and efficiency. It enables CRUD operations for doctors and patients, as well as scheduling/canceling appointments. It\'s a comprehensive solution for medical management, promoting a secure and integrated experience.',
+
+    clinic: 'Clinic ',
+    complementClinic: 'Specialty Clinic / Organization',
+
+    complementCommerce: 'Sale / Purchase',
+    complementsecurity: 'Security / Authentication',
+    complementhotel: 'Management / Reservation',
+    resumeProject5: 'The Reservation Management Microservice allows users to make, update and cancel hotel reservations. It offers functionalities to check room availability, register new reservations and manage customer information. The service ensures that all reservations are stored securely and allows access to real-time data on hotel occupancy.',
+    project3: 'E-Commerce API',
+    resumeProject3: 'REST API for an E-commerce Application Containing CRUD functionalities for users, including User, Seller, and Admin. A Seller can create products for sale, an Admin can create new categories, and a User can view and purchase these products.',
+    resumeProject4: 'The Security Microservice allows users to register and log in to the application securely. It uses JWT for authentication, generating tokens after login, which are used to access protected resources. The service differentiates between Regular Users and Administrators, with specific role-based permissions.',
+
+    emConstanteProgresso: 'In constant evolution: This project is under development and is not yet finalized. We appreciate your patience and support as we work to make it even better.',
+
+    buttonSeeProjects: 'See Project',
+    repository: '< Repository />',
+
+    inConstruction: 'Under Construction',
+
+    project_1: 'Voll.Med API',
+    inProgress1: 'In Progress',
+
+    seeMore: 'See More...',
+    seeLess: 'see Less...',
+
+    contact1: 'CONTACT-ME',
+
+    hello: 'Just say Hello',
+    contactInf: 'Contact Info',
+    contactInformation: 'Thank you for visiting my portfolio! If you would like to get in touch with me for collaboration opportunities, freelance projects, or just to say hello, feel free to send me an email.',
+    submit: 'Send message',
+
+    phone: 'Phone',
+    address: 'Address',
+    brazilAddress: 'Barueri, Brazil',
+    visitPerfil: 'Visite my social profile and get connected',
+
+  },
   es: {
     homeNav: 'Inicio',
     aboutNav: 'Acerca de',
@@ -814,13 +808,13 @@ const translations = {
     contactNav: 'Contacto',
 
     ola1: 'Hola, soy',
+    profss: 'Ingeniero de Software',
     contrat: 'Contrátame',
 
     aboutMe: 'ACERCA DE MÍ',
-    aboutMe2: 'ACERCA DE MÍ',
 
     aboutTitle: '¡Hola! Soy Maycon Pereira',
-    aboutResume: 'Estoy totalmente enfocado en el aprendizaje continuo, siempre en busca de formas de canalizar mi pasión por la tecnología en proyectos creativos y desafiantes. Lo que comenzó como una mera fascinación ha evolucionado hacia un impulso continuo de explorar nuevos conceptos y perfeccionar mis habilidades en el desarrollo.',
+    aboutResume: 'Ingeniero de Software con más de 2 años de experiencia en desarrollo de aplicaciones Java, seguridad, pruebas manuales y automatizadas, integración de sistemas y aseguramiento de la calidad. Experiencia trabajando en equipos de 4 a 7 personas, con liderazgo de squads de hasta 4 miembros. Enfoque en arquitectura robusta, APIs escalables, calidad de código y prácticas de QA aplicadas a lo largo de todo el ciclo de vida del desarrollo de software.',
 
     birthday: 'Cumpleaños',
     birthdayDate: '25 de agosto de 2005',
@@ -832,43 +826,53 @@ const translations = {
     downloadCV: 'Descargar CV',
 
     service: 'SERVICIOS',
-    service2: 'SERVICIOS',
 
-
-    box1: 'APIs RESTful',
-    box2: 'Desarrollo de APIs robustas y escalables utilizando Spring Boot.',
-    box3: 'Base de Datos',
-    box4: 'Experiencia en integración de aplicaciones Java con diferentes bases de datos.',
-    box5: 'Git y GitHub',
-    box6: 'Uso avanzado de Git para control de versión y colaboración en equipo.',
-    box7: 'Gestión de Aplicaciones',
-    box8: 'Experiencia en despliegue y gestión de aplicaciones Spring Boot.',
-    box9: 'Seguridad y Autenticación',
-    box10: 'Implementación de seguridad en APIs RESTful usando Spring Security.',
-    box11: 'Pruebas Automatizadas',
-    box12: 'Implementación de pruebas unitarias e de integración en proyectos Spring Boot.',
+    box1: 'Java & Back-End',
+    box2: `Desarrollo de APIs RESTful con Spring Boot.
+Enfoque en arquitectura escalable y robusta.
+Integración entre sistemas y servicios.`,
+    box3: 'Bases de Datos',
+    box4: `Experiencia con MySQL y PostgreSQL.
+Modelado y mantenimiento de datos.
+Optimización de consultas SQL.`,
+    box5: 'Control de Versiones',
+    box6: `Uso avanzado de Git y GitHub.
+Creación y gestión de ramas.
+Colaboración en equipos de desarrollo.`,
+    box7: 'Aplicaciones',
+    box8: `Implementación de aplicaciones Spring Boot.
+Configuración de entornos productivos.
+Monitoreo y mantenimiento continuo.`,
+    box9: 'Seguridad',
+    box10: `Implementación de autenticación y autorización.
+Configuración de Spring Security.
+Buenas prácticas contra vulnerabilidades.`,
+    box11: 'Pruebas & QA',
+    box12: `Pruebas unitarias y de integración con JUnit.
+Validación de APIs con Postman.
+Aseguramiento de calidad durante todo el ciclo de desarrollo.`,
 
     exp: 'CURRÍCULUM',
-    exp1: 'CURRÍCULUM',
+    exp1: 'Experiencia',
 
-    exp2: 'Experiencia',
-    resumeExperience: 'BlueWorks - Empleabilidad, lideré el desarrollo independiente de una aplicación web completa para mi proyecto de graduación, cubriendo front-end, back-end y base de datos. Esta experiencia mejoró mis habilidades en desarrollo y gestión de proyectos.',
+    qaEng: 'Ingeniero QA',
+    atual: 'Hasta el momento',
 
-    educacao: 'Educación',
-    technician: 'Técnico en Informática',
-    resumeEducation: 'Mientras estudiaba en (Fieb), adquirí sólidas habilidades en informática, incluyendo programación. Esta educación me preparó para enfrentar desafíos en el desarrollo de software con eficiencia y calidad.',
-    
+    resumeExperienceQA: 'Desempeñándome como QA Engineer, contribuyendo a garantizar la calidad de las entregas mediante pruebas automatizadas, documentación de escenarios, seguimiento de los ciclos de desarrollo y apoyo en la identificación de mejoras en los procesos y sistemas. ¡Siempre aprendiendo y evolucionando con el equipo!',
+    resumeExperienceFre: 'Lideré el desarrollo completo de un e-commerce con WordPress y Elementor, integrando WooCommerce y aplicando mejoras de UX y SEO que incrementaron las ventas en un 700%.',
+    resumeExperienceFull: 'Lideré de manera independiente el desarrollo de una aplicación web completa, abarcando front-end, back-end y base de datos para Fieb. Esta experiencia fortaleció mis habilidades en desarrollo, integración de sistemas y gestión de proyectos.',
 
     graduacao: 'Grado',
     graduation: 'Análisis y Desarrollo de Sistemas (ADS)',
-    resumeGraduacao: 'Estoy estudiando en São Judas para graduarme y establecerme en el mercado con conocimientos sólidos y grandes oportunidades en el área.',
-    university:"Universidad São Judas Tadeu",
+    resumeGraduacao: 'Estoy estudiando en la Universidad São Judas para graduarme y consolidarme en el mercado, adquiriendo conocimientos sólidos y aprovechando grandes oportunidades en el área de tecnología, con enfoque en desarrollo de software, seguridad y calidad de sistemas.',
+    university: "Universidad São Judas Tadeu",
+
+    technician: 'Técnico en Informática',
+    resumeEducation: 'Mientras estudiaba en (Fieb), adquirí sólidas habilidades en informática, incluyendo programación. Esta educación me preparó para enfrentar desafíos en el desarrollo de software con eficiencia y calidad.',
 
     skills1: 'MIS HABILIDADES',
-    skills2: 'MIS HABILIDADES',
 
     projec: 'PROYECTOS',
-    projec1: 'PROYECTOS',
 
     attention: 'ATENCIÓN',
     attentionWord: 'ESTAMOS EN\n OBRAS.\n DISCULPE EL\n INCONVENIENTE',
@@ -894,19 +898,10 @@ const translations = {
     emConstanteProgresso: 'En constante evolución: Este proyecto está en desarrollo y aún no está finalizado. Agradecemos su paciencia y apoyo mientras trabajamos para mejorarlo aún más.',
 
     buttonSeeProjects: 'Ver Proyecto',
-/*     buttonSeeProjects1: 'Ver Proyecto',
-    buttonSeeProjects2: 'Ver Proyecto',
-    buttonSeeProjects3: 'Ver Proyecto', */
 
     repository: '< Repositorio />',
-    repository1: '< Repositorio />',
-    repository2: '< Repositorio />',
-    repository3: '< Repositorio />',
-    repository4: '< Repositorio />',
-    repository5: '< Repositorio />',
 
     inConstruction: 'En Construcción',
-    inConstruction1: 'En Construcción',
 
     project_1: 'API Voll.Med',
     inProgress1: 'En Progreso',
@@ -915,7 +910,6 @@ const translations = {
     seeLess: 'Ver Menos...',
 
     contact1: 'CONTÁCTAME',
-    contact2: 'CONTÁCTAME',
 
     hello: '¡Solo di Hola!',
     contactInf: 'Información de Contacto',
@@ -931,6 +925,17 @@ const translations = {
 };
 
 function changeLanguage(lang) {
+
+
+  const elements = document.querySelectorAll('[data-i18n]');
+  elements.forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (translations[lang] && translations[lang][key]) {
+      el.innerText = translations[lang][key];
+    }
+  });
+
+  /*
   document.getElementById('homeNav').innerText = translations[lang].homeNav;
   document.getElementById('aboutNav').innerText = translations[lang].aboutNav;
   document.getElementById('servicesNav').innerText = translations[lang].servicesNav;
@@ -986,7 +991,7 @@ function changeLanguage(lang) {
   document.getElementById('graduation').innerText = translations[lang].graduation;
   document.getElementById('resumeGraduacao').innerText = translations[lang].resumeGraduacao;
   document.getElementById('university').innerText = translations[lang].university;
-  
+
   document.getElementById('skills1').innerText = translations[lang].skills1;
   document.getElementById('skills2').innerText = translations[lang].skills2;
 
@@ -1010,9 +1015,6 @@ function changeLanguage(lang) {
   document.getElementById('emConstanteProgresso').innerText = translations[lang].emConstanteProgresso;
 
   document.getElementById('buttonSeeProjects').innerText = translations[lang].buttonSeeProjects;
-/*   document.getElementById('buttonSeeProjects1').innerText = translations[lang].buttonSeeProjects1;
-  document.getElementById('buttonSeeProjects2').innerText = translations[lang].buttonSeeProjects2;
-  document.getElementById('buttonSeeProjects3').innerText = translations[lang].buttonSeeProjects3; */
 
   document.getElementById('repository').innerText = translations[lang].repository;
   document.getElementById('repository1').innerText = translations[lang].repository1;
@@ -1039,14 +1041,14 @@ function changeLanguage(lang) {
   document.getElementById('submit').innerText = translations[lang].submit;
 
   document.getElementById('phone').innerText = translations[lang].phone;
-  document.getElementById('address').innerText = translations[lang].address;
+  document.getElementById('address').innerText = translations[lang].ad[lang].complementCommerce;
+  document.getElementById('project3').innerText = translations[lang].project3;
+  document.getElementById('resumeProject3').innerText = translations[lang].resumeProject3;
+dress;
   document.getElementById('brazilAddress').innerText = translations[lang].brazilAddress;
   document.getElementById('visitPerfil').innerText = translations[lang].visitPerfil;
 
-  document.getElementById('complementCommerce').innerText = translations[lang].complementCommerce;
-  document.getElementById('project3').innerText = translations[lang].project3;
-  document.getElementById('resumeProject3').innerText = translations[lang].resumeProject3;
-
+  document.getElementById('complementCommerce').innerText = translations
 
   document.getElementById('complementsecurity').innerText = translations[lang].complementsecurity;
   document.getElementById('resumeProject4').innerText = translations[lang].resumeProject4;
@@ -1062,7 +1064,7 @@ function changeLanguage(lang) {
 
 
 
-
+*/
 
 
 
@@ -1072,6 +1074,7 @@ function changeLanguage(lang) {
   var emailInput = document.getElementById('email');
   var subjectInput = document.getElementById('subject');
   var msgInput = document.getElementById('msg');
+  var submit = document.getElementById('submit');
   if (lang === 'pt') {
     nameInput.placeholder = 'Seu Nome';
     emailInput.placeholder = 'Seu Email';
@@ -1163,10 +1166,6 @@ const elementsRight = document.querySelectorAll('.AnimatedRight')
 
 elementsRight.forEach((element) => myObserverRight.observe(element))
 
-
-
-
-
 const myObserverBottom = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -1183,24 +1182,28 @@ elementsBottom.forEach((element) => myObserverBottom.observe(element))
 
 
 function mostraProjetosEscondido(button) {
-  // Seleciona todos os elementos com a classe 'projetosEscondido'
   const projetos = document.querySelectorAll('.projetosEscondido');
+  const more = button.querySelector('#more');
+  const less = button.querySelector('#less');
 
-  const bolha = document.getElementById("notificationBubble");
-  bolha.style.display = "none"; // Esconde a bolha
-
-  // Verifica se os projetos estão visíveis ou não
   if (projetos[0].style.display === "block") {
-      // Se estiver visível, oculta os projetos e muda o texto do botão
-      projetos.forEach(projeto => {
-          projeto.style.display = "none"; // Muda para "none" para ocultar
-      });
-      button.innerHTML = 'Ver Mais...'; // Muda o texto para "Ver Mais..."
+
+    projetos.forEach(p => p.style.display = "none");
+    more.style.display = "inline";
+    less.style.display = "none";
   } else {
-      // Se não estiver visível, exibe os projetos e muda o texto do botão
-      projetos.forEach(projeto => {
-          projeto.style.display = "block"; // Muda para "block" para exibir
-      });
-      button.innerHTML = 'Ver Menos...'; // Muda o texto para "Ver Menos..."
+
+    projetos.forEach(p => p.style.display = "block");
+    more.style.display = "none";
+    less.style.display = "inline";
   }
+}
+
+
+
+function newHabilities() {
+  const habili = document.querySelectorAll('.noneHabilities');
+  habili.forEach(el => {
+    el.style.display = "block"; // exibe cada elemento
+  });
 }

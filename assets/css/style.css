@@ -1,4 +1,3 @@
-
 /*Google Fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap");
@@ -613,6 +612,7 @@ hr {
 .st-social-group-none {
   display: none;
 }
+
 @media screen and (max-width: 991px) {
   .st-social-group-none {
     display: block;
@@ -691,8 +691,8 @@ hr {
 
   .st-nav .st-nav-list {
     display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
@@ -1090,6 +1090,7 @@ hr {
   left: 1;
   width: 90%;
   height: 100%;
+  border-radius: 20%;
   background-color: #04102c;
   /* Cor de sobreposição azul */
   mix-blend-mode: color;
@@ -1518,6 +1519,10 @@ canvas {
   }
 }
 
+#teste {
+  display: flex;
+}
+
 @media screen and (max-width: 575px) {
   .st-hero.st-style1 {
     height: 580px;
@@ -1526,6 +1531,10 @@ canvas {
   .st-hero.st-style1 .st-hero-text h1 {
     font-size: 90px;
   }
+  
+  #teste {
+  display: block;
+}
 }
 
 /*--------------------------------------------------------------
@@ -1702,7 +1711,8 @@ canvas {
 9. About Section
 ----------------------------------------------------------------*/
 .st-about-img {
-  min-height: 550px;
+  min-height: 600px;
+  border-radius: 20%;
 }
 
 .st-about-img-wrap {
@@ -1759,7 +1769,8 @@ canvas {
 ----------------------------------------------------------------*/
 .st-iconbox.st-style1 {
   text-align: center;
-  padding: 50px 30px;
+  padding: 40px 20px;
+  height: auto;
   border-radius: 3px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -1819,6 +1830,7 @@ canvas {
 
 .st-iconbox.st-style1 .st-iconbox-text {
   margin-bottom: -6px;
+  font-size: 15px;
 }
 
 /*--------------------------------------------------------------
@@ -3366,7 +3378,12 @@ canvas {
 .html:hover+.nameskill,
 .css:hover+.nameskill,
 .javascript:hover+.nameskill,
-.bootstrap:hover+.nameskill {
+.cypress:hover+.nameskill,
+.figma:hover+.nameskill,
+.devops:hover+.nameskill,
+.typescript:hover+.nameskill,
+
+.plusSVG:hover+.nameskill {
   opacity: 1;
   transition: all 0.8s ease-in-out;
 }
@@ -3441,7 +3458,7 @@ canvas {
 
 .buttons {
   padding: 10px;
-  margin-left: 45px;
+  margin-left: 23px;
 }
 
 .buttons button {
@@ -3645,6 +3662,7 @@ canvas {
   .buttons {
     display: block;
     width: auto;
+    margin-left: 2px;
     justify-content: center;
     align-items: center;
   }
@@ -3657,6 +3675,36 @@ canvas {
   }
 
 }
+
+
+
+.expbar {
+  min-width: 50%;
+}
+
+.colexp {
+  min-width: 100%;
+}
+
+.plusbox {
+  padding-top: 2.5%;
+  display: flex;
+  width: 10%;
+  position: relative;
+  animation: moveSide 2s infinite alternate;
+}
+
+@keyframes moveSide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(3vw);
+    /* 10% da largura da tela */
+  }
+}
+
 
 .AnimatedLeft {
   opacity: 0;
@@ -3749,4 +3797,8 @@ canvas {
   font-weight: bold;
   position: relative;
   top: -5px;
+}
+
+.noneHabilities {
+ display: none;
 }
